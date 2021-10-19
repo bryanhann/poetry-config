@@ -5,8 +5,8 @@ from pathlib import Path
 
 from bch_inject import Injection as INJ
 
-from  myConfig.defaults import CONFIG
-from  myConfig.defaults import INI_FILENAME
+from  bch_config.defaults import CONFIG
+from  bch_config.defaults import INI_FILENAME
 
 def ini4name( name, inj=INJ(path=CONFIG)):
     return inj.path/name/INI_FILENAME

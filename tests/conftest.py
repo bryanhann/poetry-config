@@ -3,8 +3,8 @@ from pathlib import Path
 
 from bch_inject import Injection
 
-import myConfig as XX
-from myConfig.defaults import INI_FILENAME
+import bch_config as XX
+from bch_config.defaults import INI_FILENAME
 
 class Namespace: pass
 

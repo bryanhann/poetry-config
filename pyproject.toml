@@ -1,10 +1,10 @@
 [tool.poetry.scripts]
-bch-myconfig-usage  = 'myConfig.console:usage'
-bch-myconfig        = 'myConfig.console:run'
-bch-myconfig-ini-dump  = 'myConfig.console:dump_ini'
+bch-config-usage  = 'myConfig.console:usage'
+bch-config        = 'myConfig.console:run'
+bch-config-ini-dump  = 'myConfig.console:dump_ini'
 
 [tool.poetry]
-name = "myConfig"
+name = "bch_config"
 version = "0.1.0"
 description = ""
 authors = ["Bryan Hann <nobody@nowhere>"]
