@@ -3,7 +3,7 @@
 import configparser
 from pathlib import Path
 
-from myinject import Injection as INJ
+from bch_inject import Injection as INJ
 
 from  myConfig.defaults import CONFIG
 from  myConfig.defaults import INI_FILENAME

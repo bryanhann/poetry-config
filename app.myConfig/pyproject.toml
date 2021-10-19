@@ -12,7 +12,8 @@ authors = ["Bryan Hann <nobody@nowhere>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-myInject  = {git = "https://github.com/bryanhann/poetry-myInject", tag = "0.1.1"  }
+#myInject  = {git = "https://github.com/bryanhann/poetry-myInject", tag = "0.1.1"  }
+bch_inject = {git = "https://github.com/bryanhann/poetry.bch_inject", tag = "0.1.2"  }
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 

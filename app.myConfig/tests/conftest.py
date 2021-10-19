@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 
-from myinject import Injection
+from bch_inject import Injection
 
 import myConfig as XX
 from myConfig.defaults import INI_FILENAME
