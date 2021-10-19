@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-import fig as FIG
-from fig import ini4name, cfg4ini, cfg4name
+from myConfig import ini4name, cfg4ini, cfg4name
 
 NAME='foo.bar'
 
