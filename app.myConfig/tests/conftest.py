@@ -1,8 +1,9 @@
 import pytest
 from pathlib import Path
 
+from myinject import Injection
+
 import myConfig as XX
-from myConfig.inject import Injection
 from myConfig.defaults import INI_FILENAME
 
 class Namespace: pass

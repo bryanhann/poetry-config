@@ -3,10 +3,10 @@
 import configparser
 from pathlib import Path
 
+from myinject import Injection as INJ
+
 from  myConfig.defaults import CONFIG
 from  myConfig.defaults import INI_FILENAME
-from myConfig.inject import Injection as INJ
-
 
 def ini4name( name, inj=INJ(path=CONFIG)):
     return inj.path/name/INI_FILENAME

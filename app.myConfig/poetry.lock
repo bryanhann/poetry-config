@@ -54,6 +54,21 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "myinject"
+version = "0.1.1"
+description = ""
+category = "main"
+optional = false
+python-versions = "^3.7"
+develop = false
+
+[package.source]
+type = "git"
+url = "https://github.com/bryanhann/poetry-myInject"
+reference = "0.1.1"
+resolved_reference = "7e5aaadf79da55219275d100e7d7be621c866a79"
+
+[[package]]
 name = "packaging"
 version = "21.0"
 description = "Core utilities for Python packages"
@@ -148,7 +163,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "4160ff5d9a3716f3a05ea05072168b2f442f81ce0c14e25cb50bfd21cf2b9ee0"
+content-hash = "2e88d4e2d345a27de4b8894637d6a4b900685c0811a397edb08dcec19eeb1e47"
 
 [metadata.files]
 atomicwrites = [
@@ -171,6 +186,7 @@ more-itertools = [
     {file = "more-itertools-8.10.0.tar.gz", hash = "sha256:1debcabeb1df793814859d64a81ad7cb10504c24349368ccf214c664c474f41f"},
     {file = "more_itertools-8.10.0-py3-none-any.whl", hash = "sha256:56ddac45541718ba332db05f464bebfb0768110111affd27f66e0051f276fa43"},
 ]
+myinject = []
 packaging = [
     {file = "packaging-21.0-py3-none-any.whl", hash = "sha256:c86254f9220d55e31cc94d69bade760f0847da8000def4dfe1c6b872fd14ff14"},
     {file = "packaging-21.0.tar.gz", hash = "sha256:7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7"},
