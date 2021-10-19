@@ -2,20 +2,19 @@
 
 from myConfig import ini4name, cfg4ini, cfg4name
 
-NAME='foo.bar'
+def test_config_is_dir(CFG):
+    assert CFG.path.is_dir()
 
-def test_config_is_dir(CONFIG):
-    assert CONFIG.is_dir()
-
-def test_ini4name(CONFIG):
-    ini =  ini4name( NAME, config=CONFIG )
+def test_ini4name(CFG):
+    assert ini4name( CFG.name, config=CFG.path ) == CFG.ini
+    ini =  ini4name( CFG.name, config=CFG.path )
     assert ini.is_file()
 
-def test_cfg4ini(CONFIG):
-    ini =  ini4name( NAME, config=CONFIG )
-    cfg = cfg4ini(ini, config=CONFIG)
-    assert cfg['DEFAULT']['name'] == NAME
+def test_cfg4ini(CFG):
+    ini =  ini4name( CFG.name, config=CFG.path )
+    cfg = cfg4ini(ini, config=CFG.path)
+    assert cfg['DEFAULT']['name'] == CFG.name
 
-def test_cfg4name(CONFIG):
-    cfg = cfg4name(NAME, config=CONFIG)
-    assert cfg['DEFAULT']['name'] == NAME
+def test_cfg4name(CFG):
+    cfg = cfg4name(CFG.name, config=CFG.path)
+    assert cfg['DEFAULT']['name'] == CFG.name
