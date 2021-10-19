@@ -1,8 +1,14 @@
+[tool.poetry.scripts]
+bch-myconfig-usage  = 'myConfig.console:usage'
+bch-myconfig        = 'myConfig.console:run'
+bch-myconfig-ini-dump  = 'myConfig.console:dump_ini'
+
 [tool.poetry]
 name = "myConfig"
 version = "0.1.0"
 description = ""
 authors = ["Bryan Hann <nobody@nowhere>"]
+
 
 [tool.poetry.dependencies]
 python = "^3.7"

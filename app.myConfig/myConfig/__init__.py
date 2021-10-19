@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-from configparser import ConfigParser as CP
+
+import configparser
 from pathlib import Path
 
-CONFIG=Path.home()/'.config'
+import myConfig.defaults as DD
 
+def ini4name(name,config=DD.CONFIG):
+    return config/name/DD.INI_FILENAME
 
-def ini4name(name,config=CONFIG):
-    return config/name/'fig.ini'
-
-def cfg4ini(ini,config=CONFIG):
+def cfg4ini(ini,config=DD.CONFIG):
     assert Path(ini).is_file()
-    cfg=CP()
+    cfg=configparser.ConfigParser()
     cfg.read(ini)
     return cfg
 
-def cfg4name(name,config=CONFIG):
+def cfg4name(name,config=DD.CONFIG):
     ini = ini4name(name, config)
-    cfg = cfg4ini( ini,  config)
+    cfg = cfg4ini(ini, config)
     return cfg

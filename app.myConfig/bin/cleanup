@@ -1,0 +1,13 @@
+#!/bin/sh
+
+clean () {
+    for path in $(find . | grep $1$); do
+        echo removing: $path
+        [ -d $path  ] && rm -rf $path
+        [ -f $path  ] && rm -rf $path
+        done
+}
+#find . | grep '__pycache__$'
+#find . | grep '.pyc$'
+clean '__pycache__$'
+clean '.pyc'
