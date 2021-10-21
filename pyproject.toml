@@ -1,7 +1,7 @@
 [tool.poetry.scripts]
-bch-config-usage  = 'myConfig.console:usage'
-bch-config        = 'myConfig.console:run'
-bch-config-ini-dump  = 'myConfig.console:dump_ini'
+bch-config-usage    = 'bch_config.console:usage'
+bch-config          = 'bch_config.console:run'
+bch-config-ini-dump = 'bch_config.console:dump_ini'
 
 [tool.poetry]
 name = "bch_config"

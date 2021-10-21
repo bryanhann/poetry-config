@@ -1,9 +1,9 @@
 import sys
 from pathlib import Path
 
-import myConfig as XX
+import bch_config as XX
 
-BASEPROG='bch-myconfig'
+BASEPROG='bch_config'
 PROG=Path(sys.argv[0]).name
 
 USAGE_dump_ini=f"""
@@ -16,9 +16,9 @@ def run():
     usage()
 
 def usage():
-    print( f'The {BASEPROG.upper()} command suite.\n\nCOMMANDS:')
+    print( f'The {BASEPROG.upper()} module.\n\nCOMMANDS:')
     for path in Path(sys.executable).parent.glob('*'):
-        if path.name.startswith(BASEPROG):
+        if path.name.startswith(BASEPROG.replace('_', '-')):
             print(f"\t{path.name}")
 
 def dump_ini() :
